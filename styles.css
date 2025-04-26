@@ -1,0 +1,169 @@
+/* src/styles.css */
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #e8f5e9);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  /* App Title */
+  .App h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+  }
+  
+  /* Dashboard Container */
+  .dashboard {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Controls Section */
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .controls label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    color: #34495e;
+  }
+  
+  /* Incident List */
+  .incident-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Each Incident Card */
+  .incident-item {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .incident-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Header (Title, Severity, Date) */
+  .incident-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .incident-header strong {
+    font-size: 1.3rem;
+    color: #2c3e50;
+  }
+  
+  /* View Details Button */
+  .incident-header button {
+    background: #3498db;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+  
+  .incident-header button:hover {
+    background: #2980b9;
+  }
+  
+  /* Description Text */
+  .incident-description {
+    margin-top: 15px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* New Incident Form */
+  .new-incident-form {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 40px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .new-incident-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .new-incident-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Form Inputs */
+  .new-incident-form input,
+  .new-incident-form textarea,
+  .new-incident-form select {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+  }
+  
+  .new-incident-form input:focus,
+  .new-incident-form textarea:focus,
+  .new-incident-form select:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+  
+  /* Submit Button */
+  .new-incident-form button {
+    padding: 14px;
+    font-size: 1rem;
+    background: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .new-incident-form button:hover {
+    background: #1e8449;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .controls {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .incident-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }
+  
